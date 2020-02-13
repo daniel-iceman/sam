@@ -1,0 +1,36 @@
+.coverHome{
+    height: 400px;
+    width: 100%;
+    top: -100px;
+    background: white;
+    background-size:cover;
+    position: relative;
+    z-index: -2;
+}
+
+.overlayHome{
+    height: 100%;
+    width: 100%;
+    
+    background: linear-gradient(40deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.1) 60%, rgba(255,255,255,1)) 100%; 
+    top: 1px;
+    position: relative;
+    z-index: -3;
+}
+
+.textoNosotros h1 {
+    width: 500px;
+    height: 300px;
+    color: black;
+    font-family: "Raleway";
+    font-weight: bold;
+    letter-spacing: 6px;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;   
+    text-align:start;
+    margin-left: 50px;
+    margin-top: -240px;
+    position: absolute;
+    z-index: 4;
+}

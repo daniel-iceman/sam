@@ -1,9 +1,11 @@
 /*@font-face{font-family:AntDesign;font-style:normal;font-weight:400;src:url(fonts/AntDesign.ttf) format('truetype')}@font-face{font-family:Entypo;font-style:normal;font-weight:400;src:url(fonts/Entypo.ttf) format('truetype')}@font-face{font-family:EvilIcons;font-style:normal;font-weight:400;src:url(fonts/EvilIcons.ttf) format('truetype')}@font-face{font-family:Feather;font-style:normal;font-weight:400;src:url(fonts/Feather.ttf) format('truetype')}@font-face{font-family:FontAwesome;font-style:normal;font-weight:400;src:url(fonts/FontAwesome.ttf) format('truetype')}@font-face{font-family:FontAwesome5;font-style:normal;font-weight:400;src:url(fonts/FontAwesome5.ttf) format('truetype')}@font-face{font-family:FontAwesome5Brands;font-style:normal;font-weight:400;src:url(fonts/FontAwesome5_Brands.ttf) format('truetype')}@font-face{font-family:Foundation;font-style:normal;font-weight:400;src:url(fonts/Foundation.ttf) format('truetype')}@font-face{font-family:Ionicons;font-style:normal;font-weight:400;src:url(fonts/Ionicons.ttf) format('truetype')}@font-face{font-family:MaterialCommunityIcons;font-style:normal;font-weight:400;src:url(fonts/MaterialCommunityIcons.ttf) format('truetype')}@font-face{font-family:MaterialIcons;font-style:normal;font-weight:400;src:url(fonts/MaterialIcons.ttf) format('truetype')}@font-face{font-family:Octicons;font-style:normal;font-weight:400;src:url(fonts/Octicons.ttf) format('truetype')}@font-face{font-family:SimpleLineIcons;font-style:normal;font-weight:400;src:url(fonts/SimpleLineIcons.ttf) format('truetype')}@font-face{font-family:Zocial;font-style:normal;font-weight:400;src:url(fonts/Zocial.ttf) format('truetype')}
 */
+
+
 .menubar {
     position: fixed; /*absolute*/
     width: 100%;
-    background: #10316b;
+    background:#10316b;
     height: 56px;
     top: 0;
     left: 0;
@@ -14,6 +16,7 @@
     height: 100%;
     align-items: center;
     padding: 0 1rem;
+    margin-right: 1rem;
 }
 
 .menubar_logo {
@@ -35,16 +38,19 @@
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 .menubar_navigation_items li {
-    padding: 0 0.7rem;
+    padding: 0 0.8rem;
+    margin-left: 2rem;
 }
 
 .menubar_navigation_items a {
+    font-family: 'Montserrat', sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 100;
     letter-spacing: 1px;
 }
@@ -53,6 +59,8 @@
 .menubar_navigation_items a:active {
     color: #ff7315;
 }
+
+
 
 @media (max-width: 780px) {
     .menubar_navigation_items {
