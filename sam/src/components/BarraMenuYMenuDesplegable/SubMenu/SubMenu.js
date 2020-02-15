@@ -38,21 +38,21 @@ showDropdownMenu(event) {
           { this.state.displayMenu ? (
           <ul className='SubMenuUl'>
             <Link className='link' to='/sintomas' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} ><a className="active" href="/">Consulta Síntomas</a></li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta Síntomas</li>
             </Link>
             <Link className='link' to='/laboratorios' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} ><a href="/">Consulta Laboratorios</a></li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta Laboratorios</li>
             </Link>
             <Link className='link' to='/consejos' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} ><a href="/">Consejos para tu salud</a></li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consejos para tu salud</li>
             </Link>
             <Link className='link' to='/medicos' >
-            <li style = {{borderBottom:" 1px solid #e5e5e5"}} ><a href="/">Consulta un Médico</a></li>
+            <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta un Médico</li>
             </Link>
             <Link className='link' to='/ajustes' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} ><a href="/">Ajustes</a></li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Ajustes</li>
             </Link>
-            <li><a href="#Salir">Salir</a></li>
+            <li>Salir</li>
           </ul>
         ):
         (

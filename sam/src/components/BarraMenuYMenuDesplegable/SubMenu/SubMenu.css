@@ -28,7 +28,7 @@
     text-decoration: none;
 }
 
-.SubMenuUl li a {
+.SubMenuUl li  {
     color: white;
     text-decoration: none;
     letter-spacing: 1.6px;
@@ -47,7 +47,7 @@
     background-color:#7cbd1e ; /*#7cbd1e*/
 }
     
-.SubMenuUl li a:hover {
+.SubMenuUl li :hover {
     color:#0026E6;
     font-weight: bold;
         

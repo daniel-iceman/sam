@@ -11,33 +11,33 @@ const sideDrawer = props => {
         <nav className={drawerClasses}>
             <ul>
                 <Link to='/' >
-                    <li><a href = '/'>Inicio</a></li>
+                    <li>Inicio</li>
                 </Link>
                 <Link to='/sintomas' >
-                    <li><a href = '/'>Consulta Sintomas</a></li>
+                    <li>Consulta Sintomas</li>
                 </Link>
                 <Link to='/laboratorios' >
-                    <li><a href = '/'>Consulta Laboratorios</a></li>
+                    <li>Consulta Laboratorios</li>
                 </Link>
                 <Link to='/consejos' >
-                <li><a href = '/'>Consejos para tu salud</a></li>
+                <li>Consejos para tu salud</li>
                 </Link>
                 <Link to='/medicos' >
-                <li><a href = '/'>Consulta un Médico</a></li>
+                <li>Consulta un Médico</li>
                 </Link>
                 <Link to='/nosotros' >
-                    <li><a href = '/'>Nosotros</a></li>
+                    <li>Nosotros</li>
                 </Link>
                 <Link to='/contacto' >
-                    <li><a href = '/'>Contacto</a></li>
+                    <li>Contacto</li>
                 </Link>
                 <Link to='/registro' >
-                    <li><a href = '/'>Registro</a></li>
+                    <li>Registro</li>
                 </Link>
                 <Link to='/ajustes' >
-                    <li><a href = '/'>Ajustes</a></li>
+                    <li>Ajustes</li>
                 </Link>
-                <li><a href = '/'>Salir</a></li>
+                <li>Salir</li>
             </ul>
         </nav>
     );

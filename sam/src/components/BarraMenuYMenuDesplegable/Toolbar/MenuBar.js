@@ -14,29 +14,32 @@ const MenuBar = props => (
             <div className="menubar_logo"><a href ="/">The Logo</a></div>
             <div className='spacer'></div>
             <div className='menubar_navigation_items'>
-                <ul>
+                <ul >
                     <Link to='/' >
-                        <li><a href = '/'>Inicio</a></li>
+                        <li>Inicio</li>
                     </Link>
                 </ul>
             </div>       
+                   
             <div>
                 <SubMenu />
             </div>
-                    
+                            
             <div className='menubar_navigation_items'>
                 <ul>
                     <Link to='/nosotros' >
-                        <li><a href = '/'>Nosotros</a></li>
+                        <li>Nosotros</li>
                     </Link>
                     <Link to='/registro' >
-                        <li><a href = '/'>Registro</a></li>
+                        <li>Registro</li>
                     </Link>
                     <Link to='/contacto' >
-                        <li><a href = '/'>Contacto</a></li>
+                        <li>Contacto</li>
                     </Link>
                 </ul>
             </div>
+                   
+                    
                     
 
 

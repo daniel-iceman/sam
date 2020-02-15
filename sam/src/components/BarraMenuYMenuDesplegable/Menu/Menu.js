@@ -38,8 +38,7 @@ class Menu extends React.Component{
                 <MenuBar drawerClickHandler = {this.drawerToogleClickHandler} />
                 <SideDrawer show={this.state.sideDrawerOpen} />
                 {backdrop}
-                {/*<Introduccion style={{marginTop: '56px'}}
-                    introduccion = 'introduccion' */}
+                
                 />
             </div>
     
