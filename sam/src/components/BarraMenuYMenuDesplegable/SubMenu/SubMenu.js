@@ -47,7 +47,7 @@ showDropdownMenu(event) {
               <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consejos para tu salud</li>
             </Link>
             <Link className='link' to='/medicos' >
-            <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta un Médico</li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta un Médico</li>
             </Link>
             
           </ul>

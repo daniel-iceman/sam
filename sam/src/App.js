@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Menu from './components/BarraMenuYMenuDesplegable/Menu/Menu'
+import Footer from './components/Footer/Footer'
 import Home from './pages/Home'
 import Registro from './pages/Registro'
 import Nosotros from './pages/Nosotros'
@@ -33,6 +34,7 @@ class App extends Component {
                         <Route exact path="/mihistorial" component={MiHistorial} />
 
                     </Switch>
+                    <Footer />
                     
                 </div>
             </Router>
