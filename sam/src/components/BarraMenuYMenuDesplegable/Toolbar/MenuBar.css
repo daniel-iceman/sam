@@ -5,7 +5,8 @@
 .menubar {
     position: fixed; /*absolute*/
     width: 100%;
-    background:#10316b;
+    background:rgb(255,255,255,0.8);
+    border-bottom: 1px solid rgb(212,212,212);
     height: 56px;
     top: 0;
     left: 0;
@@ -13,10 +14,24 @@
 
 .menubar_navigation {
     display: flex;
+    width: 100%;
     height: 100%;
     align-items: center;
-    padding: 0 1rem;
+    justify-content: space-between;
+    padding: 0 0rem;
     margin-right: 1rem;
+            
+}
+
+.menubar_navigation :hover {
+    color: white;
+    /*background-color: rosybrown;#192965*/
+}
+
+.menubar_navigation_items{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
 }
 
 .menubar_logo {
@@ -24,35 +39,53 @@
 }
 
 .menubar_logo a {
-    color: white;
+    color: #192965;
     text-decoration: none;
     font-size: 1.5rem;
+    margin-left: 1rem;
 }
 
 .spacer{
     flex: 1;
 }
 
+.separación {
+    margin-right: 1rem;
+}
+
 .menubar_navigation_items ul {
     list-style: none;
-    margin: 0;
+    margin:0;
     padding: 0;
     display: flex;
-    
+}
+
+.menubar_navigation_items ul :hover {
+    background-color: #192965;
+        
 }
 
 .menubar_navigation_items li {
-    padding: 0 0.8rem;
-    margin-left: 2rem;
+    padding: 20px 0.8rem;
+    margin-left: 0rem;
+    font-size: 0.9rem;
+}   
+
+.separacion1{
+    margin-right: 6rem;
+}
+.separacion2{
+    margin-right: 2rem;
 }
 
 .menubar_navigation_items a {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #000D4D;
     text-decoration: none;
     font-size: 0.8rem;
-    font-weight: 100;
+    font-weight: 600;
     letter-spacing: 1px;
+    
 }
 
 .menubar_navigation_items a:hover,
@@ -66,6 +99,9 @@
     .menubar_navigation_items {
         display: none;
     }
+    .menubar {
+        background: linear-gradient(90deg, rgba(0,38,77,0.9) 40%, rgba(255,255,255,0.9)) 100%;
+    }
     
 }
 
@@ -76,6 +112,7 @@
     .menubar_logo {
         margin-left: 0;
     }
+    
 }
 
 

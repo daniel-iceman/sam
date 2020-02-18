@@ -1,7 +1,12 @@
 import React from 'react'
-import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
-import SubMenu from '../SubMenu/SubMenu'
 import './MenuBar.css'
+import SubMenu from '../SubMenu/SubMenu'
+import SubMenuPerfil from '../SubMenuB/SubMenuB'
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
+ 
+
+
+
 import {Link} from 'react-router-dom'
 
 
@@ -14,31 +19,64 @@ const MenuBar = props => (
             <div className="menubar_logo"><a href ="/">The Logo</a></div>
             <div className='spacer'></div>
             <div className='menubar_navigation_items'>
-                <ul >
-                    <Link to='/' >
+                <ul>
+                    <Link className='separacion1' to='/' >
                         <li>Inicio</li>
                     </Link>
+                    <SubMenu />
+                    <Link className='separacion2' to='/nosotros' >
+                        <li>Acerca</li>
+                    </Link>
+                    <Link className='separacion2' to='/contacto' >
+                        <li>Contacto</li>
+                    </Link>
+                    <SubMenuPerfil/>
                 </ul>
-            </div>       
+            </div>     
+                
+                
+              
+
+
+
+
+
+
+
+
+
+
                    
-            <div>
+            {/*<div>
                 <SubMenu />
             </div>
                             
+            
             <div className='menubar_navigation_items'>
                 <ul>
                     <Link to='/nosotros' >
-                        <li>Nosotros</li>
+                        <li>Acerca</li>
                     </Link>
-                    <Link to='/registro' >
-                        <li>Registro</li>
-                    </Link>
+                </ul>
+            </div>
+
+            <div className='menubar_navigation_items'>
+                <ul>    
                     <Link to='/contacto' >
                         <li>Contacto</li>
                     </Link>
                 </ul>
             </div>
                    
+            <div>
+                <SubMenuPerfil />
+            </div> */}
+        </nav>
+
+    </header>
+);
+
+export default MenuBar
                     
                     
 
@@ -46,12 +84,6 @@ const MenuBar = props => (
                     
                     
                    
-        </nav>
-
-    </header>
-);
-
-export default MenuBar
 
 
 

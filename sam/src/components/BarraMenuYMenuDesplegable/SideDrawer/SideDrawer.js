@@ -10,6 +10,9 @@ const sideDrawer = props => {
     return (
         <nav className={drawerClasses}>
             <ul>
+                <Link to='/signin' >
+                    <li>Iniciar Sesión</li>
+                </Link>
                 <Link to='/' >
                     <li>Inicio</li>
                 </Link>
@@ -22,11 +25,14 @@ const sideDrawer = props => {
                 <Link to='/consejos' >
                 <li>Consejos para tu salud</li>
                 </Link>
+                <Link to='/mihistorial' >
+                <li>Mi Historial</li>
+                </Link>
                 <Link to='/medicos' >
                 <li>Consulta un Médico</li>
                 </Link>
                 <Link to='/nosotros' >
-                    <li>Nosotros</li>
+                    <li>Acerca</li>
                 </Link>
                 <Link to='/contacto' >
                     <li>Contacto</li>
@@ -34,9 +40,7 @@ const sideDrawer = props => {
                 <Link to='/registro' >
                     <li>Registro</li>
                 </Link>
-                <Link to='/ajustes' >
-                    <li>Ajustes</li>
-                </Link>
+                
                 <li>Salir</li>
             </ul>
         </nav>

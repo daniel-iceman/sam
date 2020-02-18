@@ -32,7 +32,7 @@ showDropdownMenu(event) {
 
   render() {
     return (
-        <div  className="dropdown" style = {{width:"120px"}} > 
+        <div  className="dropdown" style = {{width:"80px"}} > 
          <div className="buttonSM" onClick={this.showDropdownMenu}> Servicios </div>
 
           { this.state.displayMenu ? (
@@ -49,10 +49,7 @@ showDropdownMenu(event) {
             <Link className='link' to='/medicos' >
             <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta un Médico</li>
             </Link>
-            <Link className='link' to='/ajustes' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Ajustes</li>
-            </Link>
-            <li>Salir</li>
+            
           </ul>
         ):
         (

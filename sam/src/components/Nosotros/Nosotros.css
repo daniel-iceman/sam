@@ -1,5 +1,5 @@
 .coverHome{
-    height: 400px;
+    height: 500px;
     width: 100%;
     top: -100px;
     background: white;
@@ -11,26 +11,43 @@
 .overlayHome{
     height: 100%;
     width: 100%;
-    
-    background: linear-gradient(40deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.1) 60%, rgba(255,255,255,1)) 100%; 
+    background: linear-gradient(90deg, rgba(0,38,77,0.5) 35%, rgba(77,0,64,0.8)) 100%;
+    /*background: linear-gradient(40deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.1) 60%, rgba(255,255,255,1)) 100%; */
     top: 1px;
     position: relative;
     z-index: -3;
 }
 
+.textoNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
 .textoNosotros h1 {
     width: 500px;
     height: 300px;
-    color: black;
-    font-family: 'raleway';
+    color:white;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;   
-    text-align:start;
-    margin-left: 100px;
-    margin-top: -240px;
+    font-size: 60px;
+    
+    /*text-align:start;*/
+    align-self: flex-start;
+    margin-left: 200px;
+    margin-top: -350px;
     position: absolute;
     z-index: 4;
+}
+
+.textoNosotros p {
+    width: 800px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    
+    
+
 }
