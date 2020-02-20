@@ -1,5 +1,13 @@
 import React from 'react';
 import './SubMenuB.css';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
+import { faUserEdit } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+
 import {Link} from 'react-router-dom'
 
 
@@ -33,21 +41,21 @@ showDropdownMenuPerfil(event) {
   render() {
     return (
         <div  className="dropdownPerfil" style = {{width:"80px"}} > 
-         <div className="buttonSMPerfil" onClick={this.showDropdownMenuPerfil} >Perfil </div>
+         <div className="buttonSMPerfil" onClick={this.showDropdownMenuPerfil} > <FontAwesomeIcon icon={faUser} style={{fontSize:'22px'}} /> </div>
 
           { this.state.displayMenuPerfil ? (
           <ul className='SubMenuUlPerfil'>
             <Link className='link' to='/signin' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Iniciar Sesión</li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} > <FontAwesomeIcon icon={faSignInAlt} style={{marginRight:'6px'}} /> Iniciar Sesión</li>
             </Link>
             <Link className='link' to='/registro' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Registro</li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} > <FontAwesomeIcon icon={faUserEdit} style={{marginRight:'6px'}} /> Registro</li>
             </Link>
             <Link className='link' to='/mihistorial' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Mi Historial</li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} > <FontAwesomeIcon icon={faClock} style={{marginRight:'6px'}} /> Mi Historial</li>
             </Link>
             
-            <li>Salir</li>
+            <li>Salir <FontAwesomeIcon icon={faSignOutAlt} style={{marginRight:'6px'}} /> </li>
           </ul>
         ):
         (

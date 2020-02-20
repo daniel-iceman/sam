@@ -1,5 +1,13 @@
 import React from 'react';
 import './SubMenu.css';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStethoscope } from "@fortawesome/free-solid-svg-icons";
+import { faFileMedical } from "@fortawesome/free-solid-svg-icons";
+import { faRunning } from "@fortawesome/free-solid-svg-icons";
+import { faUserMd } from "@fortawesome/free-solid-svg-icons";
+
+
 import {Link} from 'react-router-dom'
 
 
@@ -38,16 +46,17 @@ showDropdownMenu(event) {
           { this.state.displayMenu ? (
           <ul className='SubMenuUl'>
             <Link className='link' to='/sintomas' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta Síntomas</li>
+              
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} > <FontAwesomeIcon icon={faStethoscope} style={{marginRight:'6px'}} /> Consulta Síntomas</li>
             </Link>
             <Link className='link' to='/laboratorios' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta Laboratorios</li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} > <FontAwesomeIcon icon={faFileMedical} style={{marginRight:'6px'}} /> Consulta Laboratorios</li>
             </Link>
             <Link className='link' to='/consejos' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consejos para tu salud</li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} > <FontAwesomeIcon icon={faRunning} style={{marginRight:'6px'}} /> Consejos para tu salud</li>
             </Link>
             <Link className='link' to='/medicos' >
-              <li style = {{borderBottom:" 1px solid #e5e5e5"}} >Consulta un Médico</li>
+              <li style = {{borderBottom:" 1px solid #e5e5e5"}} > <FontAwesomeIcon icon={faUserMd} style={{marginRight:'6px'}} /> Consulta un Médico</li>
             </Link>
             
           </ul>

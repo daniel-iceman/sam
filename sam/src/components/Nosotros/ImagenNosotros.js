@@ -6,11 +6,11 @@ class ImagenNosotros extends Component {
     render() {
         return (
             <div>
-                <div className="coverHome"
+                <div className="coverUs"
                     style = {{
                         backgroundImage: `url(${medico})`,
                     }}>
-                    <div className="overlayHome"></div> 
+                    <div className="overlayUs"></div> 
                 </div>
                         
 

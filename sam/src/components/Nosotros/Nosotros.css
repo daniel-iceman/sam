@@ -1,4 +1,4 @@
-.coverHome{
+.coverUs{
     height: 500px;
     width: 100%;
     top: -100px;
@@ -8,7 +8,7 @@
     z-index: -2;
 }
 
-.overlayHome{
+.overlayUs{
     height: 100%;
     width: 100%;
     background: linear-gradient(90deg, rgba(0,38,77,0.5) 35%, rgba(77,0,64,0.8)) 100%;
@@ -26,14 +26,13 @@
 }
 
 .textoNosotros h1 {
-    width: 500px;
+    width: 550px;
     height: 300px;
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 60px;
-    
     /*text-align:start;*/
     align-self: flex-start;
     margin-left: 200px;

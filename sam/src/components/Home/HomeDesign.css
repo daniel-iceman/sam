@@ -8,6 +8,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    /*background: rgb(123, 0, 45, 0.5);*/
 }
 
 .headerPage {
@@ -15,19 +16,54 @@ html, body {
     width: 100%;
 }
 .coverHome {
-    min-height: 700px; /*AQUI REGULO TAMAÑO DE IMAGEN*/
-    min-width: inherit;
+    height: 580px; /*AQUI REGULO TAMAÑO DE IMAGEN*/
+    background-size:cover;
     position: absolute;
-    z-index: 0;
-    margin-top:70px;
+    z-index: -2;
+    top:0px;
+    right: 0;
+    
+    
 }
+.overlayHome {
+    width: 1700px;
+    height: 580px;
+    background: linear-gradient(90deg, rgb(0, 39, 77,1) 40%, rgba(0, 39, 77, 0.8) 70%, rgba(3, 36, 70, 0.4) 90%, rgba(77,0,64,0)) 100%; 
+    position: relative;
+    z-index: -4;
+    top: 0px;
+    left: -703px;
+}
+/*Aqui esta la edición de la posición  del texto que esta sobre la imagen */
 .textCoverHome {
+    width: 40%;
+    height: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     position: relative;
-    top:-380px;
+    top:70px;
+    left: 100px;
     z-index: 1;
 }
+
+.textCoverHome h1 {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+}
+.textCoverHome p {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+}
+.textCoverHome button {
+    width: 200px;
+    height: 40px;
+    align-self: flex-end;
+}
+    
 
 .contentPage {
     flex-grow: 1;
