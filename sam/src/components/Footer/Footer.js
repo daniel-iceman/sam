@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
 import './Footer.css'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+
+
 import {Link} from 'react-router-dom'
 
 class Footer extends Component {
@@ -78,7 +85,11 @@ class Footer extends Component {
 
                 <div className='footerBase' >
                     <div className='socialMedia' >
-                        <p>logos redes sociales</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/OB-City-health-307053883086139/?ref=settings" > <FontAwesomeIcon icon={ faFacebook } style={{marginRight:'6px'}} /> </a></li>
+                            <li><a href="https://www.facebook.com/OB-City-health-307053883086139/?ref=settings" > <FontAwesomeIcon icon={ faTwitter } style={{marginRight:'6px'}} /> </a></li>
+                            <li><a href="https://www.facebook.com/OB-City-health-307053883086139/?ref=settings" > <FontAwesomeIcon icon={ faInstagram } style={{marginRight:'6px'}} /> </a></li>
+                        </ul>
                     </div>
                     <div className='brand' >
                             <p>2020 SAM THE DOCTOR APP copyright All Right Reserved</p>

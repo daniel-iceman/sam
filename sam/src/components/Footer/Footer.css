@@ -205,10 +205,18 @@
     grid-column: 3;
     align-self: center;
     justify-self: center;
-    
+        
 }
-.socialMedia p {
-    width: fit-content;
+.socialMedia ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+.socialMedia a {
+    color: orange;
+    font-size: 25px;    
 }
 
 .brand {
