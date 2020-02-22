@@ -18,10 +18,13 @@ const MenuBar = props => (
     <header className = "menubar">
         <nav className = "menubar_navigation">
             <div className='menubar_toogle_button'>
-                <DrawerToggleButton click={props.drawerClickHandler} /> 
+                <DrawerToggleButton click={props.drawerClickHandler} />          
             </div>
+
             <div className="menubar_logo"><a href ="/">The Logo</a></div>
+
             <div className='spacer'></div>
+
             <div className='menubar_navigation_items'>
                 <ul>
                     <Link className='separacion1' to='/' >
@@ -34,9 +37,12 @@ const MenuBar = props => (
                     <Link className='separacion2' to='/contacto' >
                         <li>Contacto</li>
                     </Link>
-                    <SubMenuPerfil click={props.UsuarioMenu} className='separacion5' />
-                </ul>
+                    <SubMenuPerfil click={props.UsuarioMenu} className='separacion5' />            
+                </ul>             
+            </div>
             
+            <div>
+                <UserDrawerToggleButton click={props.userDrawerClickHandler} />
             </div>     
             
         </nav>

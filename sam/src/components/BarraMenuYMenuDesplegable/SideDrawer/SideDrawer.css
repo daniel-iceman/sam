@@ -4,17 +4,16 @@
     box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
-    left: 0;
-    width: 70%;
-    max-width: 400px;
+    right: 230px;
+    width:80%;
+    /*max-width: 800px; */
     z-index: 200;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-out;
+    animation: despliegueDrawerPerfil 0.3s ease-out both;
 }
 
-.side-drawer.open {
+/*.side-drawer.open {
     transform: translateX(0);
-}
+}*/
 
 .side-drawer ul {
     height: 100%;
@@ -38,6 +37,15 @@
 .side-drawer a:hover,
 .side-drawer a:active {
     color: #ff7315;
+}
+
+@keyframes despliegueDrawerPerfil {
+    0%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(10%);
+    }
 }
 
 @media (min-width: 769px) {

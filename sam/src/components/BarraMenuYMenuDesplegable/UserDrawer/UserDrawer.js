@@ -11,7 +11,7 @@ const userDrawer = props => {
     }
     return (
         <nav className={drawerClasses}>
-            <ul>
+            <ul style={{fontFamily: 'Montserrat'}} >
                 <Link to='/signin' >
                     <li>Iniciar Sesión</li>
                 </Link>
@@ -22,7 +22,11 @@ const userDrawer = props => {
                     <li>Mi Historial</li>
                 </Link>
                                 
-                <li>Salir</li>
+                <li style={{
+                    fontFamily: 'Montserrat', 
+                    color:'white', 
+                    fontSize:'20px', 
+                    letterSpacing:'1.8px'}} >Salir</li>
             </ul>
         </nav>
     );

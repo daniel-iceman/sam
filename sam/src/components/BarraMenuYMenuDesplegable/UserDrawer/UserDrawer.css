@@ -4,10 +4,43 @@
     box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
-    left: 0;
-    width: 70%;
+    right: 130px;
+    width: 80%;
     max-width: 400px;
     z-index: 200;
-    transform: translateX(50%);
-    transition: transform 0.3s ease-out;
+    animation: despliegueUserDrawerPerfil 0.3s ease-out both;
+    
+}
+
+.user-drawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.user-drawer a {    
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 1.8px;
+}
+
+.user-drawer li {
+    margin: 0.5rem 0;
+}
+
+.user-drawer a:hover,
+.user-drawer a:active {
+    color: #ff7315;
+}
+
+@keyframes despliegueUserDrawerPerfil {
+    0%{
+        transform: translateX(350px);
+    }
+    100%{
+        transform: translateX(40%);
+    }
 }
