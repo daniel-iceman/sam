@@ -75,15 +75,11 @@
 }
 .separacion1 li {
     font-size: 26px;
+    padding: 15px 20px;
 }
 .separacion2{
-    margin-right: 2rem;
-    /* padding:8px 0px; */
+    margin-right: 2rem;    
     margin-top: 0px;  
-}
-
-.separacion3 {
-    /* padding: 3px 0px;*/
 }
 
 .menubar_navigation_items a {
@@ -113,13 +109,14 @@
     .menubar_toogle_button {
         margin-left: 20px;
     }
-    
+        
 }
 
 @media (min-width: 769px) {
     .menubar_toogle_button {
         display: none;
     }
+    
     .menubar_logo {
         margin-left: 0;
     }

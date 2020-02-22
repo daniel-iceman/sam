@@ -3,6 +3,7 @@ import './MenuBar.css'
 import SubMenu from '../SubMenu/SubMenu'
 import SubMenuPerfil from '../SubMenuB/SubMenuB'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
+import UserDrawerToggleButton from '../UserDrawer/UserDrawerToggleButton'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -33,8 +34,9 @@ const MenuBar = props => (
                     <Link className='separacion2' to='/contacto' >
                         <li>Contacto</li>
                     </Link>
-                    <SubMenuPerfil/>
+                    <SubMenuPerfil click={props.UsuarioMenu} className='separacion5' />
                 </ul>
+            
             </div>     
             
         </nav>

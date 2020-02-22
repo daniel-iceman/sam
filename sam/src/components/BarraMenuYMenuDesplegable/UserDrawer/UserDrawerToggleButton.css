@@ -1,0 +1,15 @@
+.user-toogle-button {
+    /*width: fit-content;
+    height: fit-content;*/
+    width: fit-content;
+    height: 60px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    /* margin-top: 15px; */
+}
+/*
+.user-toogle-button:focus{
+    outline: none;
+}
+*/

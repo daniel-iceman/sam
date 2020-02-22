@@ -2,6 +2,9 @@ import React from 'react'
 import MenuBar from  '../Toolbar/MenuBar'
 import SideDrawer from '../SideDrawer/SideDrawer'
 import Backdrop from '../Backdrop/Backdrop'
+import UserDrawer from '../UserDrawer/UserDrawer'
+
+
 
 
 /* El "state" "sideDrawerOpen: false" mantiene el recuadro del menu emergente cerrado
@@ -11,7 +14,11 @@ El "backdropClickHandler" cierra el menu emergente una vez que esta abierto.
 */
 class Menu extends React.Component{ 
     state = {
-        sideDrawerOpen: false
+        sideDrawerOpen: false,
+
+        /*Usuario Menu */
+        usuarioMenuOpen: false,
+
     };
 
     drawerToogleClickHandler = () => {
@@ -25,10 +32,12 @@ class Menu extends React.Component{
         this.setState({sideDrawerOpen: false});                
     };
 
+    
+
     render(){
         
         let backdrop;
-
+        
         if (this.state.sideDrawerOpen) {
             backdrop = <Backdrop click = {this.backdropClickHandler} />
         }
@@ -37,7 +46,8 @@ class Menu extends React.Component{
             <div style = {{height: '100%'}}>
                 <MenuBar drawerClickHandler = {this.drawerToogleClickHandler} />
                 <SideDrawer show={this.state.sideDrawerOpen} />
-                {backdrop}
+                {backdrop} 
+                <UserDrawer />               
                 
                 />
             </div>

@@ -63,10 +63,10 @@
 /* Titulo del submenu, color, letra y fondo*/    
 .buttonSMPerfil {
     width:80px;
-    height:14px;
+    height:23px;
     display: flex;
     justify-content: center;
-    padding:26px 0;
+    padding:20px 0;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     font-weight: 600;

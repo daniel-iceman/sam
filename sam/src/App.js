@@ -20,6 +20,10 @@ class App extends Component {
                 <div className='App'>
                                        
                     <Menu />
+                    
+                    
+            
+            
                                         
                      <Switch>
                         <Route exact path="/" component={Home} />
