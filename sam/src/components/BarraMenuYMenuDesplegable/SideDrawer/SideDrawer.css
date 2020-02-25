@@ -1,20 +1,48 @@
+/* Propiedades de la barra lateral desplegable */
 .side-drawer {
     height: 100%;
-    background:#293462;
+    background:rgb(0, 0, 26);
     box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 230px;
-    width:80%;
-    /*max-width: 800px; */
+    width: 90%;
+    max-width: 400px; 
     z-index: 200;
-    animation: despliegueDrawerPerfil 0.3s ease-out both;
+    transform: translateX(-100%);  /* Posición oculta */
+    transition: transform 0.9s ease-out;
+}
+.side-drawer.open {
+    transform: translateX(35px);  /* Posición desplegada */
 }
 
-/*.side-drawer.open {
-    transform: translateX(0);
-}*/
+/* Secciones divididas por líneas */
+.SeccionHome {
+    border-bottom: 1px solid gray;
+}
+.SeccionConsulta {
+    border-bottom: 1px solid gray;
+}
+.SeccionDescubre {
+    border-bottom: 1px solid gray;
+}
+.SeccionConsulta p{
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    margin-left: 20px;
+    color: orange;
+}
+.SeccionDescubre p{
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    margin-left: 20px;
+    color: orange;
+}
+.SeccionNosotros {
+    color: white;
+}
 
+/* Propiedades de la lista contenida en la barra lateral desplegable */
 .side-drawer ul {
     height: 100%;
     list-style: none;
@@ -22,30 +50,72 @@
     flex-direction: column;
     justify-content: center;
 }
-
 .side-drawer li {
     margin: 0.5rem 0;
-}   
-
+    font-size: 1rem;
+}
 .side-drawer a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.3px;
+    font-family: 'Montserrat';
 }
+
+/* Propiedades de la sección superior donde está el usuario*/
+.seccionSignIn {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+
+/* Texto "Iniciar Sesión" de barra desplegable*/
+.NombreUsuario {
+    color: white;
+    position: relative;
+    z-index: 3;  
+    top: 30px;  
+    left: 40px;
+}
+.NombreUsuario {
+    display: flex;
+    flex-direction: column;    
+    position: relative; 
+    z-index: 2;  
+    top: 50px;  
+    left: 40px;
+}
+.SignIn {
+    margin-top: -25px;
+}
+
+.fondoUsuario {
+    width: 100%;
+    background-size: cover;
+    height: 140px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;    
+}
+.overlayFondoUsuario {
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(0deg, rgb(0,0,0,0.8)10%, rgb(0,0,0,0)100%);
+    position: relative;
+    z-index: 1;
+    top: 0;
+}
+
+
+/*.Home{
+    width: 220px;    
+    height:60px;
+    border-bottom: 1px solid gray;
+}*/
 
 .side-drawer a:hover,
 .side-drawer a:active {
-    color: #ff7315;
-}
-
-@keyframes despliegueDrawerPerfil {
-    0%{
-        transform: translateX(-150px);
-    }
-    100%{
-        transform: translateX(10%);
-    }
+    color:#ededed;
 }
 
 @media (min-width: 769px) {

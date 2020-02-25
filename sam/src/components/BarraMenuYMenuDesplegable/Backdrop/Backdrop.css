@@ -1,10 +1,19 @@
 .backdrop {
     position: fixed;
-    width: 70%;
+    width: 90%;
     height: 100%;
     top: 0;
-    left: 145px;    
+    left: 0px;    
     background: rgb(255, 255, 255, 0.8);
     max-width: 480px;
     z-index: 100;
+}
+.backdrop h1{
+    width: 30px;
+    font-family: 'Didact Gothic';
+    color: black;
+    font-size: 30px;
+    top: 20px;
+    left: 320px;
+    position: relative;
 }

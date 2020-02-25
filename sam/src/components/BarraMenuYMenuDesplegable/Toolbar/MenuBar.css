@@ -100,20 +100,31 @@
 
 
 @media (max-width: 780px) {
+    .menubar {
+        background: white;
+    }
+    .menubar_logo {
+        margin-left: 65px;
+    }
     .menubar_navigation_items {
         display: none;
     }
-    .menubar {
-        background: linear-gradient(90deg, rgba(0,38,77,0.9) 40%, rgba(255,255,255,0.9)) 100%;
-    }
     .menubar_toogle_button {
-        margin-left: 20px;
+        margin-left: 20px;        
+    }    
+    .menubar_user_toogle_button {
+        margin-right: 115px;
+        margin-top: 4px;
+        color: white;
     }
-        
 }
+    
 
 @media (min-width: 769px) {
     .menubar_toogle_button {
+        display: none;
+    }
+    .menubar_user_toogle_button {
         display: none;
     }
     

@@ -3,13 +3,9 @@ import './MenuBar.css'
 import SubMenu from '../SubMenu/SubMenu'
 import SubMenuPerfil from '../SubMenuB/SubMenuB'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
-import UserDrawerToggleButton from '../UserDrawer/UserDrawerToggleButton'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
- 
-
-
 
 import {Link} from 'react-router-dom'
 
@@ -17,9 +13,10 @@ import {Link} from 'react-router-dom'
 const MenuBar = props => (
     <header className = "menubar">
         <nav className = "menubar_navigation">
+
             <div className='menubar_toogle_button'>
                 <DrawerToggleButton click={props.drawerClickHandler} />          
-            </div>
+            </div>            
 
             <div className="menubar_logo"><a href ="/">The Logo</a></div>
 
@@ -41,16 +38,13 @@ const MenuBar = props => (
                 </ul>             
             </div>
             
-            <div>
-                <UserDrawerToggleButton click={props.userDrawerClickHandler} />
-            </div>     
-            
         </nav>
 
     </header>
 );
 
 export default MenuBar
+            
                     
                     
 
