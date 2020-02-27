@@ -19,7 +19,7 @@ class Footer extends Component {
 
                 <div className='footerColumnas' >
 
-                    <div className='columna1'>
+                    <div className='columna'>    {/*columna1 */}
                         <div className='marca' >
                             <h1>LOGO</h1>
                         </div>
@@ -38,7 +38,7 @@ class Footer extends Component {
                         </div>
                     </div>
 
-                    <div className='columna2' >
+                    <div className='columna' >     {/*columna2 */}
                         <div className='navegacion' >
                             <h1>Nuestro Menú</h1>
                             <ul >
@@ -61,7 +61,7 @@ class Footer extends Component {
                         </div>
                     </div>
                     
-                    <div className='columna3' >
+                    <div className='columna' >     {/*columna3 */}
                         <div className='interes' >
                             <h1>Ligas de interes</h1>
                             <ul>
@@ -75,9 +75,9 @@ class Footer extends Component {
                         </div>
                     </div>
 
-                    <div className='columna4' >
+                    <div className='columna' >    {/*columna4 */}
                         <div className='suscribete' >
-                            <h1>Suscribete para gozar de los beneficios</h1>
+                            <h2>Suscribete para gozar de los beneficios</h2>
                             <button>Suscribirme</button>
                         </div>
                     </div>

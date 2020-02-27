@@ -9,12 +9,10 @@
     width: 90%;
     max-width: 400px; 
     z-index: 200;
-    transform: translateX(-100%);  /* Posición oculta */
+    /*transform: translateX(-235%);  /* Posición oculta */ 
     transition: transform 0.9s ease-out;
 }
-.side-drawer.open {
-    transform: translateX(35px);  /* Posición desplegada */
-}
+
 
 /* Secciones divididas por líneas */
 .SeccionHome {
@@ -106,29 +104,28 @@
     top: 0;
 }
 
-
-/*.Home{
-    width: 220px;    
-    height:60px;
-    border-bottom: 1px solid gray;
-}*/
-
 .side-drawer a:hover,
 .side-drawer a:active {
     color:#ededed;
 }
+
 
 @media (min-width: 769px) {
     .side-drawer {
         display: none;
         max-width: 50px;
     }
-
 }
 
-@media (max-width: 780px) {
+/* CONFIGURACIÓN Ipad*/
+
+@media (max-width: 769px) {
     .side-drawer {
         max-width: 270px;
+        transform: translateX(-210%);  /* Posición oculta */
+    }
+    .side-drawer.open {
+        transform: translateX(-270px);  /* Posición desplegada */
     }
     .side-drawer ul {
         justify-content: start;
@@ -138,11 +135,27 @@
     }
     .side-drawer li {
         margin: 0.8rem 0;
-    } 
-        
-        
-
+    }   
 }
+
+/* Configuración iPhone Plus */
+
+@media (max-width: 415px) {
+    .side-drawer{
+        transform: translateX(-100%);  /* Posición oculta */
+    }
+    .side-drawer.open {
+        transform: translateX(85px);  /* Posición desplegada */
+    }
+    .side-drawer li {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
        
 
 

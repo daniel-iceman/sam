@@ -1,19 +1,22 @@
-.backdrop {
-    position: fixed;
-    width: 90%;
-    height: 100%;
-    top: 0;
-    left: 0px;    
-    background: rgb(255, 255, 255, 0.8);
-    max-width: 480px;
-    z-index: 100;
-}
-.backdrop h1{
-    width: 30px;
-    font-family: 'Didact Gothic';
-    color: black;
-    font-size: 30px;
-    top: 20px;
-    left: 320px;
-    position: relative;
+/* Configuración iPad */
+
+@media (max-width: 769px) {
+    .backdrop {
+        position: fixed;
+        width: 770px;
+        height: 100%;
+        top: 0px;
+        left: 0px;    
+        background: rgb(255, 255, 255, 0.8);
+        max-width: 1480px;
+        z-index: 100;
+    }
+    .backdrop h1{
+        width: 40px;
+        height: 40px;    
+        color: black;
+        top: 20px;
+        left: 300px;
+        position: relative;
+    }
 }

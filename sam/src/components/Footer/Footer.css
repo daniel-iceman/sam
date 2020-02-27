@@ -1,94 +1,73 @@
-.footerConainer {
+.footerContainer {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    position: absolute;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
     z-index: 0;
 }
-
 .footerColumnas {
-    width: 90%;
-    margin-left: 90px;
+    width: 100%;    
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     letter-spacing: 1px;
     font-family: 'Yantramanav', sans-serif;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid white;    
 }
-.footerColumnas h1 {
+.footerBase {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+}
+
+.columna {
+    height: 390px;
+    width: 250px;
+    flex-basis: 20%;
+    flex: auto;
+    top: 40px;    
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    position: relative;    
+}
+.columna h1 {
     color:orange;
     font-size: 16px;
-    text-align: start;
 }
-.footerColumnas p {
+.columna h2 {
+    color: white;
+    font-size: 18px;
+}
+.columna p {
+    width: 280px;
+    color:rgb(255, 255, 255);
     font-size: 14px;
-}
-
-.columna1 {
-    width: 25%;
-    margin-top: 40px;
-    
-}
-.columna2 {
-    width: 25%;
-    margin-top: 40px;
-}
-.columna3 {
-    width: 25%;
-    margin-top: 40px;
-}
-.columna4 {
-    width: 25%;
-    margin-top: 140px;
-    
-}
-
-.columna1 p {
-    margin-top: -1px;
-}    
-.columna2 ul {
-    margin-top: -1px;
-}
-.columna3 ul {
-    margin-top: -1px;
-}
-
-/* *******   EDICION COLUMNA 1 ******* */
-.marca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.marca h1 {
-    width: 80%;
-}
-
-.acerca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.acerca h1, p{
-    width: 80%;
-}
-
-.contactanos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.contactanos h1, p {
-    width: 80%;
-}
-.contactanos p {
     text-align: justify;
+    letter-spacing: 2px;
 }
+.columna ul {
+    font-size: 14px;
+    text-align: start;
+    list-style: none;
+    padding: 0px;
+}
+.columna li {
+    color:rgb(255, 255, 255);
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+.columna li:hover {
+    color: orange;
+}
+
 .contactanos button {
     width: 160px;
-    height: 35px;
+    height: 35px;    
     color: #00001A;
     background: white;
     font-size: 16px;
@@ -96,81 +75,23 @@
     border-radius: 5px;
     border: hidden;
     margin-top: -1px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;   
     cursor: pointer;
     transition-duration: 0.4s;
 }
-.contactanos button:hover{
+.contactanos button:hover {
     background: orange;
     color: white;
     border:3px solid white;
 }
-  
- /* *******   EDICION COLUMNA 2 ******* */
-.navegacion {
+
+.suscribete{
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.navegacion h1, ul{
-    width: 80%;
-}
-.navegacion h1 {
-    padding-left: 40px;
-}
-.navegacion ul {
-    list-style: none;
-}
-.navegacion li {
-    color: white;
-    word-spacing: 1px;
-    padding-top: 15px;    
-}
-.navegacion li:hover {
-    color: orange;
-}
-
-/* *******   EDICION COLUMNA 3 ******* */
-.interes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.interes h1, ul{
-    width: 80%;
-}
-.interes h1 {
-    padding-left: 40px;
-}
-.interes ul {
-    list-style: none;
-}
-.interes li {
-    color: white;
-    word-spacing: 1px;
-    padding-top: 15px;    
-}
-.interes li:hover {
-    color: orange;
-}
-
-/* *******   EDICION COLUMNA 4 ******* */
-.suscribete {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.suscribete h1, button {
-    width: 70%;
-}
-.suscribete h1 {
-    color: white;
-    font-weight: 100;
-
-}
-
 .suscribete button {
     width: 160px;
     height: 35px;
@@ -186,25 +107,16 @@
     cursor: pointer;
     transition-duration: 0.4s;
 }
-.suscribete button:hover{
+.suscribete button:hover {
     background: #00001A;
     color: orange;
     border:1px solid white;
     font-weight: 300;
 }
 
-/* *******   EDICION BARRA SOCIAL MEDIA ******* */
-.footerBase {
-    width: 100%;
-    height: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
-}
-        
 .socialMedia {    
     grid-column: 3;
-    text-align: center;
-        
+    text-align: center;        
 }
 .socialMedia ul {
     list-style: none;
@@ -215,14 +127,11 @@
 .socialMedia a {
     color: orange;
     font-size: 25px; 
-
 }
-
 .brand {
     grid-column: 4 / 6;
     align-self: center;
-    justify-self: center;
-    
+    justify-self: center;    
 }
 .brand p {
     width: fit-content;
@@ -233,4 +142,84 @@
 }
 
 
+/* Configuración iPad */
+
+@media (max-width: 769px) {
     
+    .columna {
+        flex-basis: 33.33%;
+        flex: auto;
+    }
+    .columna p {
+        width: 180px;
+    }
+    .suscribete{
+        margin-top: 80px;
+    }
+    .columna:nth-last-child(1) {
+        height: 240px;
+    }
+    .footerBase{
+        height: 120px;
+    }
+    .socialMedia{
+        height: 20px;
+    }
+    .brand{
+        grid-row: 2;
+        grid-column: 2/5;
+        text-align: center;
+    }
+}
+
+/* Configuración iPhone Plus */
+
+@media (max-width: 415px) {
+    .columna {
+        flex-basis: 33.33%;
+        flex: auto;
+    }
+    .columna p {
+        width: 280px;
+    }
+    .interes {
+        margin-top: -130px;
+    }
+    .suscribete {
+        margin-top: -160px;
+        margin-bottom: 50px;
+    }
+    .columna:nth-last-child(2) {
+        height: 220px;
+    }
+    .columna:nth-last-child(1) {
+        height: 80px;
+        margin-bottom: -80px;
+    }
+    .socialMedia{
+        height: 50px;
+    }
+    .socialMedia ul {
+        padding-left: 5px;
+        align-self: center;
+    }
+    .socialMedia a {
+        padding-left: 30px;
+        align-self: center;
+    }
+    
+}
+
+
+/* Configuración iPhone X (mide 812 de largo)*/
+
+@media (max-width: 376px) {
+
+}
+
+
+/* Configuración iPhone 6/7/8  (mide 667 de largo)*/
+
+@media (max-width: 376px) {
+
+}

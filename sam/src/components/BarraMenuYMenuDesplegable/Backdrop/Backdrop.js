@@ -10,7 +10,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 const backdrop = props => ( 
     <div className='backdrop' onClick={props.click}>
         <h1> <FontAwesomeIcon icon={ faTimes } 
-                style={{fontSize:'30px', 
+                style={{fontSize:'40px', 
                 paddingRight:'30px',
                 }}/> 
         </h1>
