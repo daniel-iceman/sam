@@ -1,5 +1,5 @@
 import React from 'react'
-import './SideDrawer.css'
+import './SideDrawer2.css'
 import FondoUsuario from '../../images/UserBackgroundOrange.jpg'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,8 +14,8 @@ import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 
-
 import {Link} from 'react-router-dom'
+
 
 
 const sideDrawer = props => { 
@@ -24,8 +24,11 @@ const sideDrawer = props => {
     if (props.show) {
         drawerClasses = 'side-drawer open';
     }
+
     return (
-        <nav className={drawerClasses} id='bloqueMenu' >
+        
+        <nav className={drawerClasses} id='bloqueMenu' > 
+            
             <div className='seccionSignIn' >
                 <div className='NombreUsuario' >
                     <h1>Nombre Usuario</h1>
@@ -33,7 +36,8 @@ const sideDrawer = props => {
                         <Link to='/signin' >
                             <li style={{listStyle:'none'}} > 
                                 <FontAwesomeIcon icon={faSignInAlt} 
-                                style={{fontSize:'19px', paddingRight:'10px'}}/> 
+                                style={{fontSize:'19px', 
+                                paddingRight:'10px'}}/> 
                                 Iniciar Sesión </li>
                         </Link>
                     </div>
@@ -67,17 +71,20 @@ const sideDrawer = props => {
                 <ul>             
                     <Link to='/sintomas' >
                         <li> <FontAwesomeIcon icon={ faStethoscope } 
-                            style={{fontSize:'19px', paddingRight:'30px'}}/>
+                            style={{fontSize:'19px', 
+                            paddingRight:'30px'}}/>
                             Sintomas</li>
                     </Link>
                     <Link to='/laboratorios' >
                         <li> <FontAwesomeIcon icon={ faVials } 
-                            style={{fontSize:'19px', paddingRight:'26px'}}/>
+                            style={{fontSize:'19px', 
+                            paddingRight:'26px'}}/>
                             Laboratorios</li>
                     </Link>
                     <Link to='/mihistorial' >
                     <li> <FontAwesomeIcon icon={ faClock } 
-                            style={{fontSize:'19px', paddingRight:'30px'}}/>
+                            style={{fontSize:'19px', 
+                            paddingRight:'30px'}}/>
                             Mi Historial</li>
                     </Link>
                 </ul>
@@ -88,12 +95,14 @@ const sideDrawer = props => {
                 <ul>
                     <Link to='/consejos' >
                     <li> <FontAwesomeIcon icon={ faRunning } 
-                            style={{fontSize:'19px', paddingRight:'30px'}}/>
+                            style={{fontSize:'19px', 
+                            paddingRight:'30px'}}/>
                             Cuida tu salud</li>
                     </Link>
                     <Link to='/medicos' >
                     <li> <FontAwesomeIcon icon={ faUserMd } 
-                            style={{fontSize:'19px', paddingRight:'30px'}}/>
+                            style={{fontSize:'19px', 
+                            paddingRight:'30px'}}/>
                             Médicos </li>
                     </Link>
                 </ul>
@@ -102,7 +111,8 @@ const sideDrawer = props => {
                 <ul>
                     <Link to='/nosotros' >
                         <li> <FontAwesomeIcon icon={ faQuestionCircle } 
-                            style={{fontSize:'19px', paddingRight:'30px'}}/>
+                            style={{fontSize:'19px', 
+                            paddingRight:'30px'}}/>
                             Acerca</li>
                     </Link>
                     <Link to='/contacto' >
@@ -117,8 +127,11 @@ const sideDrawer = props => {
                         Salir</li>
                 </ul>
             </div>
+            
         </nav>
+                
     );
+    
 };
 
 export default sideDrawer

@@ -44,7 +44,7 @@ class Menu extends React.Component{
         
         return( 
             <div style = {{height: '100%'}}>
-                <MenuBar drawerClickHandler = {this.drawerToogleClickHandler} userDrawerClickHandler = {this.userDrawerToogleClickHandler} />
+                <MenuBar drawerClickHandler = {this.drawerToogleClickHandler}  />
                 
                 <SideDrawer show={this.state.sideDrawerOpen} />
                 {backdrop}

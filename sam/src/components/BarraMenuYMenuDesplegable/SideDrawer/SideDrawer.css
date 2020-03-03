@@ -4,13 +4,16 @@
     background:rgb(0, 0, 26);
     box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);
     position: fixed;
-    top: 0;
+    top: 50px;
     right: 230px;
-    width: 90%;
-    max-width: 400px; 
+    width: 100%;
+    min-width: 769px;
     z-index: 200;
-    /*transform: translateX(-235%);  /* Posición oculta */ 
+    transform: translateX(-210%);  /* Posición oculta */ 
     transition: transform 0.9s ease-out;
+}
+.side-drawer.open {
+    transform: translateX(30%);  /* Posición desplegada */  /*-270*/   /*230*/
 }
 
 
@@ -71,17 +74,17 @@
 .NombreUsuario {
     color: white;
     position: relative;
-    z-index: 3;  
-    top: 30px;  
-    left: 40px;
+    z-index: 3;
+    
 }
 .NombreUsuario {
+    width: fit-content;
     display: flex;
     flex-direction: column;    
     position: relative; 
     z-index: 2;  
-    top: 50px;  
-    left: 40px;
+    top: 50px;  /*50px*/
+    left: 50%; /*40px*/
 }
 .SignIn {
     margin-top: -25px;
@@ -89,6 +92,8 @@
 
 .fondoUsuario {
     width: 100%;
+    display: flex;
+    
     background-size: cover;
     height: 140px;
     position: absolute;
@@ -125,7 +130,7 @@
         transform: translateX(-210%);  /* Posición oculta */
     }
     .side-drawer.open {
-        transform: translateX(-270px);  /* Posición desplegada */
+        transform: translateX(30%);  /* Posición desplegada */  /*-270*/   /*230*/
     }
     .side-drawer ul {
         justify-content: start;
@@ -152,6 +157,7 @@
         font-size: 0.9rem;
     }
 }
+
 
 
 
