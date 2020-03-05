@@ -27,13 +27,16 @@ const sideDrawer = props => {
     return (
         <nav className={drawerClasses} id='bloqueMenu' >
             <div className='seccionSignIn' >
-                <div className='NombreUsuario' >
+                <div className='NombreUsuario'  >
                     <h1>Nombre Usuario</h1>
-                    <div  className='SignIn'>
+                    <div  className='SignIn' >
                         <Link to='/signin' >
                             <li style={{listStyle:'none'}} > 
                                 <FontAwesomeIcon icon={faSignInAlt} 
-                                style={{fontSize:'19px', paddingRight:'10px'}}/> 
+                                style={{fontSize:'19px', 
+                                paddingRight:'10px',
+                                color:'gray'
+                                }}/> 
                                 Iniciar Sesión </li>
                         </Link>
                     </div>
@@ -47,9 +50,8 @@ const sideDrawer = props => {
                     <div className="overlayFondoUsuario"></div>
                 </div>                
             </div>
-
-                
-
+       
+        
             <div className='SeccionHome' >
                 <ul>
                     <Link to='/' >
