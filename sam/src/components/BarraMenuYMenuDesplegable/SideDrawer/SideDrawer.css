@@ -1,168 +1,235 @@
 /* Propiedades de la barra lateral desplegable */
 .side-drawer {
     height: 100%;
-    background:rgb(0, 0, 26);
-    box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);
+    background:rgb(0, 0, 0, 0);
+    /*box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);*/
     position: fixed;
-    top: 50px;
+    top: 90px;
     right: 230px;
-    width: 100%;
-    min-width: 769px;
+    width: 100%;     
     z-index: 200;
-    transform: translateX(-210%);  /* Posición oculta */ 
+    transform: translateX(-500%);  /* Posición oculta */ 
     transition: transform 0.9s ease-out;
+    
 }
 .side-drawer.open {
     transform: translateX(30%);  /* Posición desplegada */  /*-270*/   /*230*/
 }
 
-
-/* Secciones divididas por líneas */
-.SeccionHome {
-    border-bottom: 1px solid gray;
+.side-drawer.open {
+    transform: translateX(30%);  /* Posición desplegada */
 }
-.SeccionConsulta {
-    border-bottom: 1px solid gray;
-}
-.SeccionDescubre {
-    border-bottom: 1px solid gray;
-}
-.SeccionConsulta p{
-    font-family: 'Montserrat';
-    letter-spacing: 2px;
-    margin-left: 20px;
-    color: orange;
-}
-.SeccionDescubre p{
-    font-family: 'Montserrat';
-    letter-spacing: 2px;
-    margin-left: 20px;
-    color: orange;
-}
-.SeccionNosotros {
-    color: white;
-}
-
-/* Propiedades de la lista contenida en la barra lateral desplegable */
 .side-drawer ul {
-    height: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.side-drawer li {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-}
-.side-drawer a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1.3px;
-    font-family: 'Montserrat';
+    margin-left: 0px;
+    padding-left: 0px;
+    
 }
 
-/* Propiedades de la sección superior donde está el usuario*/
+
+/* ********* Propiedades del texto del menú *********** */
+#bloqueMenu h1 {
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    color: white;
+}
+#bloqueMenu li {
+    font-family: 'Montserrat';
+    color: white;
+    letter-spacing: 2px;
+    list-style: none;
+    padding-bottom: 15px;        
+}
+#bloqueMenu li:hover{
+    color: greenyellow;
+}
+#bloqueMenu p {
+    color: rgb(170, 170, 170);
+    font-family: 'Montserrat';
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#bloqueMenu a {
+    text-decoration: none;
+}
+
+
+/* ********* Sección Sign In *********** */
 .seccionSignIn {
-    height: 140px;
+    height: 15%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border-bottom: 1px solid gray;
 }
 
-/* Texto "Iniciar Sesión" de barra desplegable*/
-.NombreUsuario {
-    color: white;
-    position: relative;
-    z-index: 3;
-    
-}
-.NombreUsuario {
-    width: fit-content;
+
+/* ********* Sección Home *********** */
+.SeccionHome {
+    height: 10%;
     display: flex;
-    flex-direction: column;    
-    position: relative; 
-    z-index: 2;  
-    top: 50px;  /*50px*/
-    left: 50%; /*40px*/
-}
-.SignIn {
-    margin-top: -25px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;    
 }
 
-.fondoUsuario {
-    width: 100%;
+/* ********* Sección Consulta *********** */
+.SeccionConsulta {
+    height: 20%;
     display: flex;
-    
-    background-size: cover;
-    height: 140px;
-    position: absolute;
-    z-index: 0;
-    top: 0px;    
-}
-.overlayFondoUsuario {
-    width: 100%;
-    height: 140px;
-    background: linear-gradient(0deg, rgb(0,0,0,0.8)10%, rgb(0,0,0,0)100%);
-    position: relative;
-    z-index: 1;
-    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
 }
 
-.side-drawer a:hover,
-.side-drawer a:active {
-    color:#ededed;
+/* ********* Sección Descubre *********** */
+.SeccionDescubre {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+/* ********* Sección Nosotros *********** */
+.SeccionNosotros {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
 }
 
 
-@media (min-width: 769px) {
-    .side-drawer {
-        display: none;
-        max-width: 50px;
-    }
-}
-
-/* CONFIGURACIÓN Ipad*/
-
+/* Configuración iPad */
 @media (max-width: 769px) {
-    .side-drawer {
-        max-width: 270px;
-        transform: translateX(-210%);  /* Posición oculta */
+    .side-drawer{
+        max-width: 768px;
+    }
+    #bloqueMenu li {
+        font-size: 22px;
+    }  
+}
+
+/* Configuración Nokia N9 480 */
+@media (max-width: 480px) {
+    .side-drawer{
+        max-width: 450px; 
     }
     .side-drawer.open {
-        transform: translateX(30%);  /* Posición desplegada */  /*-270*/   /*230*/
+        transform: translateX(48%);  /* Posición desplegada */
     }
-    .side-drawer ul {
-        justify-content: start;
+    #bloqueMenu h1 {
+        font-size: 23px;
     }
-    .side-drawer a {
-        font-size: 1rem;
+    #bloqueMenu li {
+        font-size: 18px;
+        padding-bottom: 20px;
     }
-    .side-drawer li {
-        margin: 0.8rem 0;
-    }   
+    #bloqueMenu p{
+        margin-bottom: 4px;
+        margin-top: 25px;
+    }
+    .SeccionHome li {
+        margin-top: 15px;
+    }
+    .SeccionConsulta {
+        height: 25%;
+    }
+    .SeccionNosotros {
+        height: 20%;
+    }
+
 }
 
-/* Configuración iPhone Plus */
-
+/* Configuración iPhone PLUS 6/7/8 414 */
 @media (max-width: 415px) {
     .side-drawer{
-        transform: translateX(-100%);  /* Posición oculta */
+        max-width: 350px; 
     }
     .side-drawer.open {
-        transform: translateX(85px);  /* Posición desplegada */
+        transform: translateX(56%);  /* Posición desplegada */
     }
-    .side-drawer li {
-        margin: 0.5rem 0;
-        font-size: 0.9rem;
+    #bloqueMenu h1 {
+        font-size:20px;
+    }
+    #bloqueMenu li {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    #bloqueMenu p{
+        margin-bottom: -3px;
+    }
+    .seccionSignIn {
+        height: 15%;
+    }  
+    .SeccionHome {
+        height: 8%;
+    }
+    .SeccionHome li {
+        margin-top: 15px;
+    }
+    .SeccionConsulta {
+        height: 25%;
+    }
+    .SeccionDescubre {
+        height: 20%;
+    }
+    .SeccionNosotros {
+        height: 20%;
     }
 }
 
+/* Configuración iPhone X y 6/7/8 375 */
+@media (max-width: 415px) {
+    .side-drawer{
+        max-width: 340px; 
+    }
+    .side-drawer.open {
+        transform: translateX(62%);  /* Posición desplegada */
+    }
+}
 
+/* Configuración Galaxy Note II 360 */
+@media (max-width: 360px) {
+    .side-drawer{
+        max-width: 340px; 
+        top: 60px;
+    }
+    .side-drawer.open {
+        transform: translateX(65%);  /* Posición desplegada */
+    }
+    .SeccionNosotros {
+        margin-top: 10px;
+    }
+}
 
-
-
-       
-
-
+/* Configuración iPhone 5E 320 */
+@media (max-width: 321px) {   
+    .side-drawer{
+        max-width: 300px; 
+        top: 70px;
+    }
+    .side-drawer.open {
+        transform: translateX(73%);  /* Posición desplegada */
+    }
+    #bloqueMenu li {
+        font-size: 13px;
+        padding-bottom: 15px;
+    }
+    #bloqueMenu p{
+        font-size: 12px;
+        margin-bottom: -3px;
+        margin-top: 25px;
+    }
+    .SeccionConsulta {
+        height: 25%;
+    }
+    .SeccionNosotros {
+        height: 20%;
+    }
+}
 
