@@ -16,14 +16,13 @@ html, body {
     width: 100%;
 }
 .coverHome {
+    background-image: url('../images/Nurse_short_home_image.jpg');
     height: 580px; /*AQUI REGULO TAMAÑO DE IMAGEN*/
     background-size:cover;
     position: absolute;
     z-index: -2;
     top:0px;
-    right: 0;
-    
-    
+    right: 0;    
 }
 .overlayHome {
     width: 1700px;
@@ -43,7 +42,7 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    top:70px;
+    top:100px;
     left: 100px;
     z-index: 1;
 }
@@ -52,19 +51,46 @@ html, body {
     color: white;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
+    font-size: 40px;
 }
 .textCoverHome p {
     color: white;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
 }
-.textCoverHome button {
+.buttonCoverHome {
     width: 200px;
     height: 40px;
     align-self: flex-end;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;    
 }
-    
+
 
 .contentPage {
     flex-grow: 1;
+}
+
+/* Configuración iPad */
+@media (max-width: 769px) {
+    
+    .bodyContainer {
+        height: 1200px;
+    }
+    .coverHome{
+        height: 530px; /*AQUI REGULO TAMAÑO DE IMAGEN*/
+        width: 80%;
+        padding-right: 350px;
+    }
+    .overlayHome {
+        width: 271%;
+        height: 530px;
+    }
+
 }
