@@ -146,13 +146,7 @@
 }
 
 /* Configuración iPhone PLUS 6/7/8 414 */
-@media (max-width: 415px) {
-    .side-drawer{
-        max-width: 350px; 
-    }
-    .side-drawer.open {
-        transform: translateX(56%);  /* Posición desplegada */
-    }
+@media (max-width: 415px) {    
     #bloqueMenu h1 {
         font-size:20px;
     }
@@ -186,10 +180,10 @@
 /* Configuración iPhone X y 6/7/8 375 */
 @media (max-width: 415px) {
     .side-drawer{
-        max-width: 340px; 
+        max-width: 350px; 
     }
     .side-drawer.open {
-        transform: translateX(62%);  /* Posición desplegada */
+        transform: translateX(57%);  /* Posición desplegada */
     }
 }
 

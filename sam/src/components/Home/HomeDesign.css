@@ -4,15 +4,15 @@ html, body {
 }
 
 .bodyContainer {
-    height: 900px;
+    height: 1800px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     /*background: rgb(123, 0, 45, 0.5);*/
 }
-
+/* *************** Contenido del Header ************** */
 .headerPage {
-    min-height: 800px;
+    min-height: 580px;
     width: 100%;
 }
 .coverHome {
@@ -36,7 +36,7 @@ html, body {
 /*Aqui esta la edición de la posición  del texto que esta sobre la imagen */
 .textCoverHome {
     width: 40%;
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +46,6 @@ html, body {
     left: 100px;
     z-index: 1;
 }
-
 .textCoverHome h1 {
     color: white;
     font-family: 'Lexend Deca', sans-serif;
@@ -61,21 +60,208 @@ html, body {
     text-align: justify;
     line-height: 30px;
 }
-.buttonCoverHome {
+.textCoverHome button {    
     width: 200px;
-    height: 40px;
-    align-self: flex-end;
+    height: 50px;
+    background: rgb(45, 143, 138);
+    color: white;
     border-radius: 5px;
+    border-style: none;
     font-family: 'Montserrat';
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
-    letter-spacing: 2px;    
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.textCoverHome button:hover {
+    background: rgb(65, 182, 176);
+    color: white;
+} 
+.botonesHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;  
+}
+
+.buttonConoce a{
+    width: 80px;
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    text-size-adjust: 60px;
 }
 
 
+/* *************** Contenido de Sección ************** */
 .contentPage {
-    flex-grow: 1;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    /*flex-grow: 1;*/
 }
+
+/* *************** Contenido Sección Botones ************** */
+.seccion-consultasBotones {
+    display: flex;
+    justify-content: space-around;
+}
+.tituloConsultas{
+    width: 50%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;       
+    padding-right: 0px; 
+    padding-left: 50px;
+}
+    
+.ayuda-pregunta {    
+    width: 90%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(47, 117, 111);
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    background: white;
+    border: 1px solid rgb(108, 185, 179);
+    border-radius: 0px 20px 0px 20px;
+    animation: aparece 1s forwards;  
+}
+
+.botonesConsultas{    
+    min-width: 400px;
+    height: fit-content;
+    margin-top: 35px;
+    display: flex;
+    flex-flow: row wrap;    
+    justify-content: center;    
+}
+.botonesConsultas button{
+    height: 100px;
+    width: 400px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 5px 5px 15px -5px gray;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.btn-1 {    
+    background: linear-gradient(rgb(191, 22, 10)60%, rgb(233, 116, 53)100%);
+    transition: all 0.5s ease;
+}
+.btn-2 {
+    background: linear-gradient(rgb(226, 126, 12)60%, rgb(255, 206, 46)100%);
+    transition: all 0.5s ease;
+}
+.btn-3 {
+    background: linear-gradient(rgb(9, 138, 0)60%, rgb(90, 240, 79)100%);
+    transition: all 0.5s ease;
+}
+.btn-4 {
+    background: linear-gradient(rgb(25, 121, 255)60%, rgb(71, 182, 255)100%);
+    transition: all 0.5s ease;
+}
+
+.btn-1:hover {
+    transform: scale(1.06);
+}
+.btn-2:hover {
+    transform: scale(1.06);
+}
+.btn-3:hover {
+    transform: scale(1.06);
+}
+.btn-4:hover {
+    transform: scale(1.06);
+}
+
+
+/* *************** Contenido Sección Video Publicitario ************** */
+.textoPublicity {
+    display: flex;
+    flex-direction: column;
+}
+.textoPublicity h1 {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    margin-left: 50px;
+}
+.textoPublicity p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    color: rgb(77, 77, 77);
+}
+
+.espacio{
+    height: 90px;
+}
+.videoPublicity {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-inicio {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 60px;
+}
+.btn-inicio button {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-style: none;
+    box-shadow: 5px 5px 15px -5px gray;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: rgb(45, 143, 138);
+    letter-spacing: 1px;
+    border-radius: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+.btn-inicio a {
+    text-decoration: none;
+}
+
+@keyframes aparece {
+    0%{
+        color: rgb(47, 117, 111, 0);
+        border: 1px solid rgb(108, 185, 179, 0);
+        transform: translateY(-50px);        
+    }
+    50%{
+        color: rgb(47, 117, 111, 0.5);
+        border: 1px solid rgb(108, 185, 179, 0.5);
+    }
+    100%{
+        color: rgb(47, 117, 111, 1);
+        border: 1px solid rgb(108, 185, 179, 1);
+    }
+}
+
+
+
 
 /* Configuración iPad */
 @media (max-width: 769px) {
