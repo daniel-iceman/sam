@@ -3,13 +3,39 @@ html, body {
 }
 
 select:required:invalid {
-    color: #666;
+    color: rgb(161, 161, 161);
 }
 option[value=""][disabled] {
     display: none;
 }
 option {
-    color: #000;
+    color: #000;    
+}
+select {
+    width: 75px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+input{
+    width: 230px;
+    height: 25px;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    border-style: none;
+    padding-left: 5px;
+}
+input::placeholder{
+    color: rgb(161, 161, 161);
+}
+p{
+    color: whitesmoke;
+    font-size: 12px;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .signIn-container {
@@ -28,7 +54,7 @@ option {
 .form-container {
     width: 50%;
     height: 80%;
-    background: rgb(0,0,77,0.7);
+    background: rgb(0,0,77,0.6);
     position: relative;
     z-index: 1;
     top: 120px;
@@ -41,26 +67,39 @@ option {
     font-family: 'Raleway';
     color: white;
 }
+.seccion-Registro {
+    width: 400px;
+    position: relative;
+    z-index: 2;
+    top: -430px;
+    left: 200px;
+
+}
+
 .fila-1 {
+    height: 130px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    margin-left: 60px;
 }
 .fila-2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -20px;
+    margin-left: 60px;
 }
 .fecha-nacimiento-Posicion {
-    height: 120px;
+    height: 120px;    
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 .fecha-nacimiento-Posicion p {
-    margin-bottom: 5px;
+    
 }
 .dia-mes-año-Posicion {
     display: flex;
@@ -68,26 +107,54 @@ option {
     justify-content: center;
     align-items: center;
 }
-.sexo {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-}
-.genero {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-}
+
 .fila-3{
     height: 120px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-top: -40px;
+    margin-left: 60px;
 }
+.sexo {
+    margin-right: 30px ;   
+}
+.sexo select {
+    width: 100px;
+}
+.genero select {
+    width: 100px;
+}
+
 .fila-4{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 60px;
+    margin-top: -10px;
+}
+.fila-5{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 125px;
+    margin-top: 30px;
+}
+.btn-enviar button{
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    border-style: none;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: rgb(250,125,0);
+    color: white;
+}
+.btn-enviar button:hover{
+    background: rgb(250, 163, 76);
 }
