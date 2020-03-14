@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import SignIn from '../components/SignIn/SignIn'
 
 class Registro extends Component {
     render() {
         return (
-            <div style={{marginTop: '56px'}}  >
-                AQUI SE VAN A REGISTRAR
+            <div >
+                <SignIn />
             </div>
         )
     }

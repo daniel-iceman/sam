@@ -47,8 +47,7 @@ const sideDrawer = props => {
 
                 <div className="fondoUsuario"
                         style = {{
-                        backgroundImage: `url(${FondoUsuario})`,
-                        }}>
+                        backgroundImage: `url(${FondoUsuario})`}}>
 
                     <div className="overlayFondoUsuario"></div>
                 </div>                
@@ -60,8 +59,7 @@ const sideDrawer = props => {
                     <Link to='/' >
                         <li> <FontAwesomeIcon icon={ faHome } 
                             style={{fontSize:'19px', 
-                            paddingRight:'30px',
-                            }}/> 
+                            paddingRight:'30px' }}/> 
                             Inicio</li>
                     </Link> 
                 </ul>
