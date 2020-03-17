@@ -72,7 +72,9 @@ h1 {
     position: relative;
     z-index: 2;
 }
-
+.mover-derecha-cuadro {
+    left: 300px;
+}
 
 /* ************ RECUADRO AZUL ********** */
 .form-container {

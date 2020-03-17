@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import './SignIn.css'
 
-function SignIn () {
+
+function SignIn () {    
 
     return (
         <div className='signIn-container'>
             <div className='imageBackground'> </div>
                 <div className='move-cover'>
-                    <button type='button'  >cambiar</button>
+                    <button type='button'>cambiar</button>
 
                 </div>
             <div className='form-container'>
