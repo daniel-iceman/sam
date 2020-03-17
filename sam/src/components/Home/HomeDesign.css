@@ -124,16 +124,19 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
-    font-family: 'Nunito', sans-serif;
-    color: rgb(47, 117, 111);
-    font-size: 22px;
-    font-weight: 200;
-    letter-spacing: 2px;
+    margin-left: 50px;    
     background: white;
     border: 1px solid rgb(108, 185, 179);
     border-radius: 0px 20px 0px 20px;
-    animation: aparece 1s forwards;  
+    animation: aparece-cuadro 0.9s forwards;  
+}
+.ayuda-pregunta h1{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(47, 117, 111);
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    animation: aparece-texto 0.9s forwards;    
 }
 
 .botonesConsultas{    
@@ -244,7 +247,7 @@ html, body {
     text-decoration: none;
 }
 
-@keyframes aparece {
+@keyframes aparece-cuadro {
     0%{
         color: rgb(47, 117, 111, 0);
         border: 1px solid rgb(108, 185, 179, 0);
@@ -257,6 +260,19 @@ html, body {
     100%{
         color: rgb(47, 117, 111, 1);
         border: 1px solid rgb(108, 185, 179, 1);
+    }
+}
+@keyframes aparece-texto {
+    0%{
+        color: rgb(47, 117, 111, 0);
+        transform: translateY(-50px);        
+    }
+    50%{
+        color: rgb(47, 117, 111, 0.5);
+    }
+    100%{
+        color: rgb(47, 117, 111, 1);
+        
     }
 }
 

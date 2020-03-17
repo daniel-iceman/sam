@@ -14,14 +14,18 @@ option {
 select {
     width: 75px;
     height: 30px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 500;
     margin-right: 5px;
     border-radius: 5px;
 }
 input{
     width: 230px;
-    height: 25px;
+    height: 28px;
     border-radius: 5px;
     font-family: 'Raleway';
+    font-size: 15px;
     font-weight: 500;
     border-style: none;
     padding-left: 5px;
@@ -37,51 +41,79 @@ p{
     margin-bottom: 5px;
     margin-top: 5px;
 }
+h1 {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 35px;
+}
 
 .signIn-container {
     width: 100%;
-    height: 900px;       
+    height: 950px;       
 }
 .imageBackground{    
     background-image: url('../images/doctorsMD.jpg');
     filter: blur(9px);
     background-size: cover;
     width: 100%;
-    height: 900px;
+    height: 950px;
     position: absolute;
     z-index: -4;
 }
+
+/* ************ Recuadro movible ********** */
+.move-cover {
+    height: 775px;
+    width: 430px;
+    background: blueviolet;
+    top: 120px;
+    left: 200px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ************ RECUADRO AZUL ********** */
 .form-container {
     width: 50%;
     height: 80%;
     background: rgb(0,0,77,0.6);
-    position: relative;
+    position: absolute;
     z-index: 1;
     top: 120px;
     left: 200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: stretch;
     border-radius: 20px;
     font-family: 'Raleway';
     color: white;
 }
+
+
+/* ************ Zona de Registro ********** */
 .seccion-Registro {
     width: 400px;
-    position: relative;
-    z-index: 2;
-    top: -430px;
-    left: 200px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.seccion-Registro h1 {
+    margin-top: -20px;
+    
 }
 
 .fila-1 {
+    width: fit-content;
+    margin: 0px;
     height: 130px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 60px;
+    
 }
 .fila-2 {
     display: flex;
@@ -89,7 +121,7 @@ p{
     justify-content: center;
     align-items: flex-start;
     margin-top: -20px;
-    margin-left: 60px;
+     /*margin-left: 95px;*/
 }
 .fecha-nacimiento-Posicion {
     height: 120px;    
@@ -98,24 +130,19 @@ p{
     align-items: center;
     justify-content: center;    
 }
-.fecha-nacimiento-Posicion p {
-    
-}
 .dia-mes-año-Posicion {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
 .fila-3{
     height: 120px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: -40px;
-    margin-left: 60px;
+    margin-top: -40px;    
 }
 .sexo {
     margin-right: 30px ;   
@@ -126,35 +153,75 @@ p{
 .genero select {
     width: 100px;
 }
-
 .fila-4{
+    height: 130px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 60px;
-    margin-top: -10px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -20px;
 }
 .fila-5{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-left: 125px;
     margin-top: 30px;
 }
 .btn-enviar button{
+    height: 40px;
+    width: 130px;
+    border-radius: 15px;
+    border-style: none;
+    background: rgb(250,125,0);
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;    
+    cursor: pointer;
+}
+.btn-enviar button:hover{
+    background: rgb(250, 163, 76);
+}
+
+/* ************ Zona de Ingreso ********** */
+.seccion-Ingreso{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-Ingreso h1{
+    margin-top: -183px;
+}
+.Ingresar-cuenta{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-olvido-password button {
+    height: 30px;
+    width: 200px;
+    border-radius: 15px;
+    border-style: none;
+    background:white;
+    color: #00004D;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-ingresar button {
     height: 30px;
     width: 100px;
     border-radius: 15px;
     border-style: none;
-    font-family: 'Montserrat';
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
     background: rgb(250,125,0);
     color: white;
-}
-.btn-enviar button:hover{
-    background: rgb(250, 163, 76);
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
 }

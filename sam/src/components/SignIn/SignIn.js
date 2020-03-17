@@ -2,11 +2,22 @@ import React from 'react'
 import './SignIn.css'
 
 function SignIn () {
+
     return (
         <div className='signIn-container'>
             <div className='imageBackground'> </div>
-            <div className='form-container'></div>
+                <div className='move-cover'>
+                    <button type='button'  >cambiar</button>
+
+                </div>
+            <div className='form-container'>
+
                 <div className='seccion-Registro' >
+                    <div>
+                        <h1>
+                            Crear una Cuenta
+                        </h1>
+                    </div>
                     <form  method='get' id='form-datos-generales' >                
                         <div className='fila-1' >
                             <div>
@@ -57,26 +68,32 @@ function SignIn () {
                             </div>
                         </div> 
                         <div className='fila-3'> 
-                                    <div className='sexo' >
-                                        <select name='Sex' required>
-                                            <option value='' disabled selected > Sexo </option>
-                                            <option value='0' >Masculino </option>
-                                            <option value='1' >Femenino </option>
-                                        </select>
-                                    </div>
+                            <div className='sexo' >
+                                <select name='Sex' required>
+                                    <option value='' disabled selected > Sexo </option>
+                                    <option value='0' >Masculino </option>
+                                    <option value='1' >Femenino </option>
+                                </select>
+                            </div>
 
-                                    <div className='genero' >
-                                        <select name='Gender' required>
-                                            <option value='' disabled selected > Género </option>
-                                            <option>Homosexual</option>
-                                            <option>Lesbiana</option>
-                                        </select>
-                                    </div>                    
+                            <div className='genero' >
+                                <select name='Gender' required>
+                                    <option value='' disabled selected > Género </option>
+                                    <option>Homosexual</option>
+                                    <option>Lesbiana</option>
+                                </select>
+                            </div>                    
                         </div>                   
                     
                         <div className='fila-4' >
                             <div className='email' >
-                                <input type='text' placeholder='Email' ></input>
+                                <input type='email' placeholder='Email' ></input>
+                            </div>
+                            <div>
+                                <input type='password' placeholder='Contraseña' ></input>
+                            </div>
+                            <div>
+                                <input type='password' placeholder='Confirmar contraseña' ></input>
                             </div>
                         </div>
 
@@ -86,7 +103,32 @@ function SignIn () {
                             </div>
                         </div>
                     </form>
-                </div>    
+                </div>   
+
+                {/* Sección de ingreso */}
+                <div className='seccion-Ingreso' >
+                    <div>
+                        <h1>
+                            Ingresar
+                        </h1>
+                    </div>
+                    <form className='Ingresar-cuenta' method='get' id='form-ingreso' >
+                        <div>
+                            <input type='email' placeholder='Email'  ></input>
+                        </div>
+                        <div>
+                            <input type='password' placeholder='Contraseña' ></input>
+                        </div>
+                        <div className='btn-olvido-password'>
+                            <button type="submit" value="olvido-contraseña">¿Olvidaste contraseña?</button>
+                        </div>
+                        <div className='btn-enviar'>
+                            <button type="submit" form="form-datos-generales" value="Submit">Ingresar</button>
+                        </div>                      
+                    </form>
+                </div> 
+
+            </div>
         </div>
     )
 
