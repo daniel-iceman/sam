@@ -8,7 +8,7 @@ function SignIn () {
         <div className='signIn-container'>
             <div className='imageBackground'> </div>
                 <div className='move-cover'>
-                    <button type='button'>cambiar</button>
+                    <button type='button'  >cambiar</button>
 
                 </div>
             <div className='form-container'>
