@@ -30,7 +30,7 @@ function HomeDesign () {
                             padecimientos y emitir recomendaciones de tratamiento.
                         </p>
                         <div className='botonesHeader' >
-                            <Link to='/registro' >
+                            <Link to='/signin' >
                                 <button className='buttonSuscribe' type="button">
                                     Registrarme
                                 </button>

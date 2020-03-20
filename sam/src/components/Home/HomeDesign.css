@@ -128,7 +128,7 @@ html, body {
     background: white;
     border: 1px solid rgb(108, 185, 179);
     border-radius: 0px 20px 0px 20px;
-    animation: aparece-cuadro 0.9s forwards;  
+    animation: aparece-cuadro 1s forwards;  
 }
 .ayuda-pregunta h1{
     font-family: 'Nunito', sans-serif;
@@ -136,7 +136,7 @@ html, body {
     font-size: 30px;
     font-weight: 200;
     letter-spacing: 2px;
-    animation: aparece-texto 0.9s forwards;    
+    animation: aparece-texto 1s forwards;    
 }
 
 .botonesConsultas{    

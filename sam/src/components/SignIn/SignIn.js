@@ -1,17 +1,27 @@
 import React from 'react';
 import './SignIn.css'
+import {Link} from 'react-router-dom'
 
 
 function SignIn () {    
 
     return (
-        <div className='signIn-container'>
+        <div className='entry-container'>
             <div className='imageBackground'> </div>
-                {/*<div className='move-cover'>
-                    <button type='button'  >cambiar</button>
 
-                </div>*/}
-            <div className='form-container'>
+            <div className='move-cover-SignIn' >
+                <h1>Hola de nuevo</h1>
+                
+                <h2>Ingresa a tu cuenta, será un placer ayudarte</h2>
+                
+                <Link to='/login' >
+                    <button className='buttonSuscribe' type="button">
+                        Ingresar
+                    </button>
+                </Link> 
+            </div>
+
+            <div className='form-container-SignIn'>
 
                 <div className='seccion-Registro' >
                     <div>

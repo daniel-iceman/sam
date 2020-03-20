@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import LogIn from '../components/LogIn/LogIn'
 
 class InicioSesion extends Component {
     render() {
         return (
-            <div style={{marginTop: '56px'}} >
-                <h1>AQUI INICIA SESION</h1>
+            <div>
+                <LogIn />
             </div>
         )
     }

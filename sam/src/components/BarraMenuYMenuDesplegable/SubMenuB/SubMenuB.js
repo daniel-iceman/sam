@@ -45,7 +45,7 @@ showDropdownMenuPerfil(event) {
 
           { this.state.displayMenuPerfil ? (
           <ul className='SubMenuUlPerfil'>
-            <Link className='link' to='/signin' >
+            <Link className='link' to='/login' >
               <li style = {{borderBottom:" 1px solid #e5e5e5"}} > <FontAwesomeIcon icon={faSignInAlt} style={{marginRight:'6px'}} /> Iniciar Sesión</li>
             </Link>
             <Link className='link' to='/registro' >
