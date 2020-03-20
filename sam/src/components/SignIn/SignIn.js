@@ -106,28 +106,7 @@ function SignIn () {
                     </form>
                 </div>   
 
-                {/* Sección de ingreso */}
-                <div className='seccion-Ingreso' >
-                    <div>
-                        <h1>
-                            Ingresar
-                        </h1>
-                    </div>
-                    <form className='Ingresar-cuenta' method='get' id='form-ingreso' >
-                        <div>
-                            <input type='email' placeholder='Email'  ></input>
-                        </div>
-                        <div>
-                            <input type='password' placeholder='Contraseña' ></input>
-                        </div>
-                        <div className='btn-olvido-password'>
-                            <button type="submit" value="olvido-contraseña">¿Olvidaste contraseña?</button>
-                        </div>
-                        <div className='btn-enviar'>
-                            <button type="submit" form="form-datos-generales" value="Submit">Ingresar</button>
-                        </div>                      
-                    </form>
-                </div> 
+                
 
             </div>
         </div>
