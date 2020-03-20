@@ -7,10 +7,10 @@ function SignIn () {
     return (
         <div className='signIn-container'>
             <div className='imageBackground'> </div>
-                <div className='move-cover'>
+                {/*<div className='move-cover'>
                     <button type='button'  >cambiar</button>
 
-                </div>
+                </div>*/}
             <div className='form-container'>
 
                 <div className='seccion-Registro' >
