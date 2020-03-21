@@ -204,11 +204,11 @@
 /* Configuración iPhone 5E 320 */
 @media (max-width: 321px) {   
     .side-drawer{
-        max-width: 300px; 
-        top: 70px;
+        max-width: 200px; 
+        top: 60px;
     }
     .side-drawer.open {
-        transform: translateX(73%);  /* Posición desplegada */
+        transform: translateX(-150%);  /* Posición desplegada */
     }
     #bloqueMenu li {
         font-size: 13px;
@@ -219,11 +219,20 @@
         margin-bottom: -3px;
         margin-top: 25px;
     }
+    .seccionSignIn{
+        height: 12%;
+    }
+    .SeccionHome {
+        height: 5%;
+    }
     .SeccionConsulta {
-        height: 25%;
+        height: 15%;
+    }
+    .SeccionDescubre{
+        height: 10%;
     }
     .SeccionNosotros {
-        height: 20%;
+        height: 10%;
     }
 }
 

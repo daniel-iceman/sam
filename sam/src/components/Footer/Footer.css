@@ -1,3 +1,4 @@
+
 .footerContainer {
     width: 100%;
     display: flex;
@@ -172,13 +173,73 @@
     }
 }
 
+/* Configuración Nokia N9 480 */
+@media (max-width: 480px) {   
+
+    .columna:nth-last-child(1) {
+        height: 20px;
+        padding-top: 150px;
+        background: palevioletred;
+    } 
+    .columna:nth-last-child(2) {
+        height: 110px;
+        padding-top: 50px;
+        background: green;
+    }
+    .columna:nth-last-child(3) {
+        height: 250px;        
+        background: yellow;
+    }
+    .columna:nth-last-child(4) {
+        height: 250px;
+        background: red;
+    } 
+    .columna p {
+        width: 400px;
+    }    
+    .columna button {
+        margin-top: 30px;
+    }
+    .navegacion {
+        margin-top: 20px;
+    }
+    .interes {
+        margin-top: -40px;
+    }
+    .suscribete {
+        margin-top: -150px;
+    }
+    .footerBase {
+        margin-top: 60px;
+    }
+}
+
+
 /* Configuración iPhone Plus */
 
 @media (max-width: 415px) {
+        
     .columna {
-        flex-basis: 33.33%;
-        flex: auto;
+        width: 100%;
     }
+    .columna:nth-last-child(1) {
+        height: 10px;
+        padding-top: 150px;
+        background: palevioletred;
+    } 
+    .columna:nth-last-child(2) {
+        height: 50px;
+        padding-top: 140px;
+        background: green;
+    }
+    .columna:nth-last-child(3) {
+        height: 250px; 
+        background: yellow;
+    }
+    .columna:nth-last-child(4) {
+        height: 300px;
+        background: red;
+    } 
     .columna p {
         width: 280px;
     }
@@ -189,13 +250,7 @@
         margin-top: -160px;
         margin-bottom: 50px;
     }
-    .columna:nth-last-child(2) {
-        height: 220px;
-    }
-    .columna:nth-last-child(1) {
-        height: 80px;
-        margin-bottom: -80px;
-    }
+    
     .socialMedia{
         height: 50px;
     }
@@ -207,18 +262,16 @@
         padding-left: 30px;
         align-self: center;
     }
-    
 }
 
+/* Configuración iPhone X y 6/7/8 375 */
+@media (max-width: 415px) {
+    .suscribete h2{
+        text-align: center;
+    }
+}
 
 /* Configuración iPhone X (mide 812 de largo)*/
-
-@media (max-width: 376px) {
-
-}
-
-
-/* Configuración iPhone 6/7/8  (mide 667 de largo)*/
 
 @media (max-width: 376px) {
 
